@@ -23,11 +23,27 @@ int main() {
     cout << "Indices of 7 in arr1: ";
     if (result1.empty()) {
         cout << "Key not found" << endl;
-    } else {
+    } 
+    else {
         for (int idx : result1) {
             cout << idx << " ";
         }
         cout << endl;
     }
+// Test case 2: Key not present
+    vector<int> arr2 = {1, 2, 3, 4, 5};
+    int key2 = 6;
+    vector<int> result2 = findAllIndices(arr2, key2);
+    cout << "Indices of 6 in arr2: ";
+    if (result2.empty()) {
+        cout << "Key not found" << endl;
+    } 
+    else {
+        for (int idx : result2) {
+            cout << idx << " ";
+        }
+        cout << endl;
+    }
+
 return 0;
 }
