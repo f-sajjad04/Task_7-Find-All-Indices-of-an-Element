@@ -44,6 +44,19 @@ int main() {
         }
         cout << endl;
     }
+//Test case 3: Empty array
+    vector<int> arr3 = {};
+    int key3 = 2;
+    vector<int> result3 = findAllIndices(arr3, key3);
+    cout << "Indices of 2 in arr3: ";
+    if (result3.empty()) {
+        cout << "Key not found" << endl;
+    } else {
+        for (int idx : result3) {
+            cout << idx << " ";
+        }
+        cout << endl;
+    }
 
 return 0;
 }
